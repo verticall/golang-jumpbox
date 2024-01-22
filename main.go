@@ -52,10 +52,12 @@ func main() {
 		_, ok := filtermap[input_list2[i]]
 		if ok {
 			counter += 1
+			filtermap[input_list2[i]]+= 1
 		}
 	}
 
 	fmt.Println("counter [a/e/i/o/u] = ",counter)
+	fmt.Println("detail = ",filtermap)
 
 
 }
